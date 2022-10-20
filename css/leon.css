@@ -55,10 +55,6 @@ body {
 /* end global rules */
 /* Start Components */
 
-<<<<<<< HEAD
-
-=======
->>>>>>> bc52409569157919c9f0701e64b97a2bd81fb3fd
 .special-heading {
     color: #ebeced;
     font-size: 100px;
@@ -481,7 +477,7 @@ hr {
     }
 
     .about .container .about-con .col-text {
-        width: 70%;
+        width: 69%;
     }
 
     hr {
@@ -567,7 +563,7 @@ hr {
         color: var(--sec-color);
         letter-spacing: -2px;
         font-size: 25px;
-        margin: 15px;
+        margin: 15px 13px;
     }
     
     .contact a {
