@@ -127,7 +127,7 @@ body {
 .header .links ul::after {
     content: "";
     position: absolute;
-    top: -8%;
+    top: -6%;
     right: 5px;
     border-style: solid;
     border-width: 10px;
