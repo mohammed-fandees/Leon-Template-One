@@ -31,7 +31,7 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 99%;
     }
 }
 
@@ -372,8 +372,6 @@ body {
 
 }
 
-
-
 .portfolio .container .cards .card img {
     max-width:  100%;
 
@@ -401,20 +399,27 @@ body {
     padding: var(--H-padding) var(--V-padding);
 }
 
-/* .about .container {
-
-
-} */
-
 .about .container .about-con {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 50px;
+    display: flex;
+    gap: 250px;
     margin: 80px 0;
+}
+
+@media (max-width: 1200px) {
+    .about .container .about-con {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .about .container .about-con .col {
     position: relative;
+}
+
+@media (max-width: 767px) {
+    .about .container .about-con .col {
+        display: none;
+    }
 }
 
 .about .container .about-con .col img {
@@ -444,25 +449,19 @@ body {
     z-index: -1;
 }
 
-.about .container .about-con .col-text {
-    width: 100%;
-}
-
 .about .container .about-con .col-text p:first-of-type {
     font-weight: bold;
     line-height: 2;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
     width: 100%;
 }
 
 .about .container .about-con .col-text p:last-of-type {
     color: var(--text-color);
     line-height: 2;
-
+    margin: 50px auto 0;
     width: 100%;
 }
-
-
 
 hr {
     margin-left: 0;
@@ -470,26 +469,18 @@ hr {
     width: 50%;
 }
 
-@media (max-width: 767px) {
-    .about .container .about-con .col {
-        display: none;
-        
-    }
-
-    .about .container .about-con .col-text {
-        width: 70%;
-        width: 69%;
+@media (max-width: 1200px) {
+    .about .container .about-con .col-text p:first-of-type,
+    .about .container .about-con .col-text p:last-of-type {
+        text-align: center;
     }
 
     hr {
-        margin-left: 20%;
-    }
-
-    .about .container .about-con .col-text p:first-of-type,
-    .about .container .about-con .col-text p:last-of-type {
-        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
+
 /* End About */
 /* Start Contact */
 
@@ -564,7 +555,7 @@ hr {
         color: var(--sec-color);
         letter-spacing: -2px;
         font-size: 25px;
-        margin: 15px 13px;
+        margin: 15px 0;
     }
     
     .contact a {
@@ -587,6 +578,7 @@ hr {
 
     .contact .soc p {
         margin: 50px;
+        text-align: center;
     }
 }
 
